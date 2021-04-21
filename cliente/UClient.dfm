@@ -20,6 +20,7 @@ object Form2: TForm2
     Height = 25
     Caption = 'BtnStart'
     TabOrder = 0
+    OnClick = BtnStartClick
   end
   object BtnStop: TButton
     Left = 24
@@ -28,6 +29,7 @@ object Form2: TForm2
     Height = 25
     Caption = 'BtnStop'
     TabOrder = 1
+    OnClick = BtnStopClick
   end
   object BtnSend: TButton
     Left = 24
@@ -36,6 +38,7 @@ object Form2: TForm2
     Height = 25
     Caption = 'BtnSend'
     TabOrder = 2
+    OnClick = BtnSendClick
   end
   object MemoLog: TMemo
     Left = 135
@@ -68,5 +71,15 @@ object Form2: TForm2
     MinValue = 0
     TabOrder = 6
     Value = 1004
+  end
+  object ClientSocket1: TClientSocket
+    Active = False
+    ClientType = ctNonBlocking
+    Port = 0
+    OnConnect = ClientSocket1Connect
+    OnDisconnect = ClientSocket1Disconnect
+    OnRead = ClientSocket1Read
+    Left = 80
+    Top = 152
   end
 end
