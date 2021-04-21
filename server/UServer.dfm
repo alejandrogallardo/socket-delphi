@@ -27,6 +27,7 @@ object Form1: TForm1
     Height = 25
     Caption = 'BtnStart'
     TabOrder = 1
+    OnClick = BtnStartClick
   end
   object BtnStop: TButton
     Left = 8
@@ -35,6 +36,7 @@ object Form1: TForm1
     Height = 25
     Caption = 'BtnStop'
     TabOrder = 2
+    OnClick = BtnStopClick
   end
   object BtnSend: TButton
     Left = 24
@@ -43,6 +45,7 @@ object Form1: TForm1
     Height = 25
     Caption = 'BtnSend'
     TabOrder = 3
+    OnClick = BtnSendClick
   end
   object EditMsg: TEdit
     Left = 152
@@ -65,7 +68,10 @@ object Form1: TForm1
     Active = False
     Port = 0
     ServerType = stNonBlocking
+    OnClientConnect = ServerSocket1ClientConnect
+    OnClientDisconnect = ServerSocket1ClientDisconnect
+    OnClientRead = ServerSocket1ClientRead
     Left = 56
-    Top = 96
+    Top = 120
   end
 end
