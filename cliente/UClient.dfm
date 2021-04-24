@@ -2,7 +2,7 @@ object Form2: TForm2
   Left = 0
   Top = 0
   Caption = 'Client'
-  ClientHeight = 257
+  ClientHeight = 379
   ClientWidth = 336
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -14,27 +14,27 @@ object Form2: TForm2
   PixelsPerInch = 96
   TextHeight = 13
   object BtnStart: TButton
-    Left = 24
+    Left = 8
     Top = 63
-    Width = 75
+    Width = 121
     Height = 25
     Caption = 'BtnStart'
     TabOrder = 0
     OnClick = BtnStartClick
   end
   object BtnStop: TButton
-    Left = 24
+    Left = 8
     Top = 94
-    Width = 75
+    Width = 121
     Height = 25
     Caption = 'BtnStop'
     TabOrder = 1
     OnClick = BtnStopClick
   end
   object BtnSend: TButton
-    Left = 24
-    Top = 216
-    Width = 75
+    Left = 8
+    Top = 346
+    Width = 121
     Height = 25
     Caption = 'BtnSend'
     TabOrder = 2
@@ -44,12 +44,12 @@ object Form2: TForm2
     Left = 135
     Top = 8
     Width = 185
-    Height = 204
+    Height = 336
     TabOrder = 3
   end
   object EditMsg: TEdit
     Left = 135
-    Top = 218
+    Top = 350
     Width = 185
     Height = 21
     TabOrder = 4
@@ -79,7 +79,7 @@ object Form2: TForm2
     OnConnect = ClientSocket1Connect
     OnDisconnect = ClientSocket1Disconnect
     OnRead = ClientSocket1Read
-    Left = 80
-    Top = 152
+    Left = 88
+    Top = 208
   end
 end
